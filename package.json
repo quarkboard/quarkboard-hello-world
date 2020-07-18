@@ -1,0 +1,20 @@
+{
+  "contributors": [
+    "Ken Stanley <support@dohpaz.dev>"
+  ],
+  "name": "quarkboard-hello-world",
+  "version": "1.0.0",
+  "description": "A simple \"Hello World\" demonstration plugin.",
+  "main": "lib/hello-world.js",
+  "license": "MIT",
+  "private": false,
+  "repository": "https://github.com/quarkboard/quarkboard-hello-world.git",
+  "dependencies": {
+    "@quarkboard/quarkboard-plugin": "^0.1.0"
+  },
+  "directories": {
+    "js": "./js",
+    "css": "./css",
+    "images": "./images"
+  }
+}
