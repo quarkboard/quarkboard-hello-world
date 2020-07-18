@@ -1,0 +1,65 @@
+body {
+    background-color: purple;
+    color: white;
+
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+#top-bar, #bottom-bar {
+    background-color: #420142;
+    height: 100%;
+    transition: transform .8s ease-out;
+    transform: scaleY(0);
+    width: 100%;
+}
+
+#top-bar {
+    transform-origin:top;
+}
+
+#bottom-bar {
+    transform-origin:bottom;
+}
+
+#middleLeft, #middleRight { display: none }
+#middleCenter {
+    grid-area: middleCenter / span 3;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(180deg, #eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimatedGradient 10s ease infinite;
+    -moz-animation: AnimatedGradient 10s ease infinite;
+    animation: AnimatedGradient 10s ease infinite;
+}
+
+@-webkit-keyframes AnimatedGradient {
+    0%{background-position:17% 0%}
+    50%{background-position:84% 100%}
+    100%{background-position:17% 0%}
+}
+@-moz-keyframes AnimatedGradient {
+    0%{background-position:17% 0%}
+    50%{background-position:84% 100%}
+    100%{background-position:17% 0%}
+}
+@keyframes AnimatedGradient {
+    0%{background-position:17% 0%}
+    50%{background-position:84% 100%}
+    100%{background-position:17% 0%}
+}
